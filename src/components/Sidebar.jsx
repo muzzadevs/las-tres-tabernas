@@ -60,7 +60,7 @@ const Sidebar = () => {
               {librosAntiguo.map((libro) => (
                 <Link
                   key={libro}
-                  href={`/book/${libro.toLowerCase().replace(/\s+/g, "-").replace(/[áéíóú]/g, (char) => ({
+                  href={`/books/${libro.toLowerCase().replace(/\s+/g, "-").replace(/[áéíóú]/g, (char) => ({
                     á: "a",
                     é: "e",
                     í: "i",
@@ -94,7 +94,7 @@ const Sidebar = () => {
               {librosNuevo.map((libro) => (
                 <Link
                   key={libro}
-                  href={`/book/${libro.toLowerCase().replace(/\s+/g, "-").replace(/[áéíóú]/g, (char) => ({
+                  href={`/books/${libro.toLowerCase().replace(/\s+/g, "-").replace(/[áéíóú]/g, (char) => ({
                     á: "a",
                     é: "e",
                     í: "i",
