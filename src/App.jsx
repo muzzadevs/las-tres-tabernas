@@ -20,7 +20,7 @@ const App = () => {
         <Box flex="1" p="4" overflow="auto">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/book/:bookName" element={<BookContent />} />
+            <Route path="/books/:bookName" element={<BookContent />} />
           </Routes>
         </Box>
       </Flex>
